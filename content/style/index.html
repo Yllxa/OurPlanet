@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Our planet</title>
+ <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<section>
+    <div class="wave" id="wave1" style="--1:1;"></div>
+    <div class="wave" id="wave2" style="--1:2;"></div>
+    <div class="wave" id="wave3" style="--1:3;"></div>
+    <div class="wave" id="wave4" style="--1:4;"></div>
+</section>
+
+<div class="sec">
+      <h2> Exploring the Depths and Wonders of H2O </h2>
+      <p>
+        Water, the life-sustaining elixir, is an invaluable resource that permeates every facet of our planet. From vast oceans to meandering rivers, serene lakes to gushing waterfalls, water is an essential component of Earth's intricate tapestry. It covers approximately 71% of the Earth's surface, forming a cradle for diverse ecosystems and supporting an abundance of life. Not only does water quench our thirst, but it also plays a crucial role in regulating the Earth's climate, shaping landscapes through erosion, and providing a vital habitat for countless species. As we delve into the depths of this precious resource, we unravel the marvels and mysteries that make water an irreplaceable force in sustaining life as we know it.
+        <br><br>
+        Beyond its physical presence, water is the cradle of life. It serves as the primary medium for countless organisms, providing a habitat for aquatic plants, fish, mammals, and a plethora of microorganisms. The oceans, with their vast expanse and unfathomable depths, house an incredible diversity of marine life, from delicate coral reefs teeming with vibrant colors to colossal whales gracefully traversing the depths. Rivers and lakes, with their freshwater ecosystems, support an array of species, acting as lifelines for both human societies and wildlife alike.
+        <br><br>
+        Water is a remarkable substance with unique properties that contribute to its indispensability. Its ability to exist in three states - solid, liquid, and gas - enables it to shape the Earth's physical characteristics. In its solid form, water forms glaciers and ice caps, sculpting majestic mountain ranges and carving out valleys. As a liquid, it weaves intricate networks, flowing through rivers and streams, nourishing flora and fauna along its course. Water vapor, the gaseous form of water, rises into the atmosphere, forming clouds and participating in the complex cycle of evaporation, condensation, and precipitation.
+        <br><br>
+        Moreover, water's role in sustaining life extends far beyond its direct influence on living organisms. It acts as a vital agent in numerous natural processes, including the weathering of rocks, the erosion of landscapes, and the formation of underground aquifers. Water acts as a solvent, dissolving minerals and nutrients, allowing them to be transported and made available to living organisms. It also plays a pivotal role in regulating the Earth's temperature, acting as a heat sink and modulating climate patterns through its immense capacity to store and release thermal energy
+        <br><br>
+        However, despite its abundance, water resources are not infinite, and the sustainability of our planet's water systems is under threat. The impact of human activities, such as pollution, overconsumption, and climate change, pose significant challenges to the health and availability of clean water. Recognizing the critical importance of water, it is our collective responsibility to conserve and protect this precious resource for future generations. By promoting awareness, implementing sustainable practices, and embracing innovative solutions, we can ensure a thriving and harmonious coexistence with water, cherishing its beauty, significance, and vital role in our interconnected world.
+        
+      </p>
+      
+    </div>
+
+    <script>
+      let wave1=document.getElementById('wave1');
+      let wave2=document.getElementById('wave2');
+      let wave3=document.getElementById('wave3');
+      let wave4=document.getElementById('wave4');
+
+      window.addEventListener('scroll', function(){
+        let value= window.scrollY;
+        wave1.style.backgroundPositionX= 400+ value* 4 + 'px';
+        wave2.style.backgroundPositionX= 300+value* -4 + 'px';
+        wave3.style.backgroundPositionX= 200+ value* 2+ 'px';
+        wave4.style.backgroundPositionX= 100+value*-2+ 'px';
+
+      })
+    </script>
+</body>
+</html>
